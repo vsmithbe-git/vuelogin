@@ -34,11 +34,11 @@ const useAuth =  () => {
     };
 
 const logout = async() => {
-    await singOut(firebaseAuth);
+    await signOut(firebaseAuth);
     isAuthenticated.value = false;
     user.value = "";
 };
-    return { isAuthenticated, login, logout, user};
+    return { isAuthenticated, login, signup, logout, user};
 };
 
 export default useAuth;
