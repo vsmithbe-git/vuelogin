@@ -24,9 +24,6 @@ const { value: password, errorMessage: passwordError } = useField('password');
 
 const {isAuthenticated,  login, signup, googleLogin} = useAuth();
 
-//const username = ref("");
-//const password = ref("");
-
 const router = useRouter();
 
 const logginIn = async () => {
