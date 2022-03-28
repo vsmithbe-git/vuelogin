@@ -21,7 +21,7 @@ const signingUp = async () => {
   await signup(username.value, password.value);
   goToHome();
  };
-//Added for the google auth button
+
 const google = async () => {
   await googleLogin();
   goToHome();
@@ -60,7 +60,7 @@ const { ready, start } = useTimeout(3000, { controls: true }, false);
      @click ="signingUp" 
      class="w-1/2 bg-green-600 text-green-200 py-2 rounded-lg">SignUp</button>
     </div>
-    //Added the google image and a button
+    
     <button @click="google"
     class="flex bg-white justify-center py-2 rounded-lg hover:bg-gray-300"><img src="../assets/Google__G__Logo.svg"/></button>
 </form>
